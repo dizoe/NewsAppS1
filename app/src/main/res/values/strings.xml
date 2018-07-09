@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NewsApp S1</string>
+
+    <string name="no_news">No news for you! :( </string>
+
+    <string name="no_internet_connection">No internet connection! :( </string>
+
+    <string name="news_image">News image</string>
+</resources>

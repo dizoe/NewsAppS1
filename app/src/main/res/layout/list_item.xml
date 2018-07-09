@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item that displays an news -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NewsListWrapper">
+
+    <!-- Section Name & Date/Time wrapper -->
+    <LinearLayout
+        android:id="@+id/section_date_wrapper"
+        style="@style/NewsListSectionDateWrapper">
+
+        <TextView
+            android:id="@+id/section_name"
+            style="@style/NewsListSection"
+            tools:text="Technology" />
+
+        <!-- Date/Time wrapper -->
+        <LinearLayout
+            android:id="@+id/date_time_wrapper"
+            style="@style/NewsListDateTimeWrapper">
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/NewsListDate"
+                tools:text="Mar 6, 2010" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/NewsListTime"
+                tools:text="3:00 PM" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Image/Title wrapper -->
+    <LinearLayout
+        android:id="@+id/image_title_wrapper"
+        style="@style/NewsListImageTitleWrapper">
+
+        <ImageView
+            android:id="@+id/image"
+            style="@style/NewsListImage"
+            android:contentDescription="@string/news_image"/>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/NewsListTitle"
+            tools:text="Example News" />
+    </LinearLayout>
+
+    <!-- Author name -->
+    <TextView
+        android:id="@+id/author_name"
+        style="@style/NewsListAuthor"
+        tools:text="John Smith" />
+</LinearLayout>
